@@ -1,0 +1,27 @@
+<h1>Listing mealtypes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mealtypes.each do |mealtype| %>
+      <tr>
+        <td><%= mealtype.name %></td>
+        <td><%= mealtype.description %></td>
+        <td><%= link_to 'Show', mealtype %></td>
+        <td><%= link_to 'Edit', edit_mealtype_path(mealtype) %></td>
+        <td><%= link_to 'Destroy', mealtype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mealtype', new_mealtype_path %>
