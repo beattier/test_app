@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @recipe.title %>
+</p>
+
+<p>
+  <strong>Short description:</strong>
+  <%= @recipe.short_description %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @recipe.description %>
+</p>
+
+<p>
+  <strong>Method:</strong>
+  <%= @recipe.method %>
+</p>
+
+<p>
+  <strong>Net carbs in g:</strong>
+  <%= @recipe.net_carbs_in_g %>
+</p>
+
+<p>
+  <strong>Calories in kcal:</strong>
+  <%= @recipe.calories_in_kcal %>
+</p>
+
+<p>
+  <strong>Cuisine:</strong>
+  <%= @recipe.cuisine %>
+</p>
+
+<p>
+  <strong>Mealtype:</strong>
+  <%= @recipe.mealtype %>
+</p>
+
+<p>
+  <strong>Collection:</strong>
+  <%= @recipe.collection %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @recipe.user %>
+</p>
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>
